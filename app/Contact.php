@@ -5,9 +5,31 @@ namespace App;
 
 class Contact
 {
+	private $name;
+	private $number;
 	
-	function __construct()
+	public function __construct($number)
 	{
-		# code...
+		$this->number = $number;
+	}
+
+	public function setNumber(string $number)
+	{
+		$this->number = $number;
+	}
+
+	public function getNumber(): string 
+	{
+		return $this->number;
+	}
+
+	public function setName(string $name) 
+	{
+		$this->name = $name;
+	}
+
+	public function getName(): string 
+	{
+		return $this->name;
 	}
 }
